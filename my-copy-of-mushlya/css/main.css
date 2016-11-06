@@ -414,9 +414,9 @@ a {
 	transition: background 5s linear;*/
 }
 
-.search_form__global:hover {
+/*.search_form__global:hover {
 	background-position: 150px 12px;
-}
+}*/
 
 .search__type {
 	/*display: none;*/
