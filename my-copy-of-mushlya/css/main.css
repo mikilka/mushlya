@@ -287,6 +287,14 @@ a {
 	border-bottom: 10px solid #ead7a5;
 }
 
+.visible {
+	padding-bottom: 30px;
+}
+
+.invisible {
+	display: none;
+}
+
 .search__wrapper {
 	padding: 35px 0;
 }
@@ -399,11 +407,11 @@ a {
 	padding-left: 21px;
 	letter-spacing: -2px;
 	cursor: pointer;
-	-webkit-transition: background 5s linear;
+/*	-webkit-transition: background 5s linear;
 	-moz-transition: background 5s linear;
 	-ms-transition: background 5s linear;
 	-o-transition: background 5s linear;
-	transition: background 5s linear;
+	transition: background 5s linear;*/
 }
 
 .search_form__global:hover {

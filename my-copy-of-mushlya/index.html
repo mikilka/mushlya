@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -53,7 +57,10 @@
                  <!-- end of epochs  -->
             </div>
         </section>
-        <section class="search">
+        <section class="search visible"  id="visible">
+            <button class="search_form search_form__global">пошук...</button>
+        </section>
+        <section class="search invisible">
             <div class="wrapper search__wrapper">
                <div class="search__type hidden ">
                    <h3 class="search__title">МІСТА</h3>
@@ -315,5 +322,14 @@
             <p>&copy; 2016 Mushlya</p>
         </div>
     </footer>
+    <script>
+        $(document).ready(function (){
+            $("button.search_form").click(function(){
+                $("#visible").toggle(500);
+                $(".invisible").toggle(500);
+                return false
+            });
+        });
+    </script>
 </body>
 </html>
