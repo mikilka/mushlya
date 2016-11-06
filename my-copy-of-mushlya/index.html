@@ -325,8 +325,8 @@
     <script>
         $(document).ready(function (){
             $("button.search_form").click(function(){
-                $("#visible").toggle(500);
-                $(".invisible").toggle(500);
+                $("#visible").slideToggle('slow');
+                $(".invisible").slideToggle('slow');
                 return false
             });
         });
